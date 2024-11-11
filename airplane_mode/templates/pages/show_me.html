@@ -1,0 +1,31 @@
+<!-- templates/pages/show_me.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Me Color</title>
+    <style>
+        .color-rectangle {
+            width: 200px;
+            height: 200px;
+            background-color: {{frappe.form_dict.get("color", "black")}};
+            border: 1px solid #000;
+            margin: 50px auto;
+            text-align: center;
+            line-height: 200px;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="color-rectangle">
+        {{ frappe.form_dict.get("color", "black").capitalize() }}
+    </div>
+</body>
+
+</html>

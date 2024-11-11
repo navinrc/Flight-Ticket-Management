@@ -242,3 +242,6 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+web_include_route = {
+    "show-me": "airplane_mode/airplane_mode/templates/pages/show_me.py"
+}
